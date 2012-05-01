@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp        "
+        android:text="@string/gstreamer_plugins_list"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ExpandableListView
+        android:id="@+id/gst_plugins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <!-- Preview: listitem=@layout/plugin_group -->
+    </ExpandableListView>
+</LinearLayout>
