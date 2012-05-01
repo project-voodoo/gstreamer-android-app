@@ -40,7 +40,7 @@ public class Main extends Activity {
 
         @Override
         protected void onPostExecute(Boolean result) {
-            if (result)
+            if (result && mGstPluginsAdapter != null)
                 mGstPluginsAdapter.notifyDataSetChanged();
         }
     }

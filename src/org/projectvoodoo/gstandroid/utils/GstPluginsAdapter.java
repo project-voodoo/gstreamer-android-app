@@ -183,7 +183,10 @@ public class GstPluginsAdapter extends BaseExpandableListAdapter implements Sect
 
     @Override
     public int getSectionForPosition(int position) {
-        int indexMax = mSectionsPositions.size() > 0 ? mSectionsPositions.size() - 1 : 0;
+        if (mSectionsPositions.size() == 0)
+            return 0;
+
+        int indexMax = mSectionsPositions.size() - 1;
 
         if (position >= 0 && position < mSectionsPositions.get(indexMax)) {
             int i;
